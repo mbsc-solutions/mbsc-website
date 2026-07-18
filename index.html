@@ -5,76 +5,90 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MBSC Solutions</title>
 
-<link rel="stylesheet" href="style.css">
-
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
-body{background:#f5f7fa;color:#333;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+line-height:1.6;
+}
+
 header{
-background:#0d47a1;
-color:#fff;
+background:#0D47A1;
+color:white;
 padding:20px;
 text-align:center;
+position:sticky;
+top:0;
 }
-header h1{font-size:40px;}
-header p{margin-top:10px;font-size:18px;}
+
+header h1{
+font-size:40px;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+}
 
 nav{
-background:#1565c0;
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
+margin-top:15px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-padding:15px 20px;
+margin:0 15px;
 font-weight:bold;
 }
 
 nav a:hover{
-background:#0d47a1;
+color:#FFD54F;
 }
 
 .hero{
-padding:70px 20px;
-text-align:center;
-background:linear-gradient(135deg,#1976d2,#42a5f5);
+background:linear-gradient(135deg,#1565C0,#42A5F5);
 color:white;
+padding:80px 20px;
+text-align:center;
 }
 
 .hero h2{
 font-size:42px;
-margin-bottom:15px;
+margin-bottom:20px;
 }
 
 .hero p{
 font-size:20px;
-margin-bottom:25px;
+margin-bottom:30px;
 }
 
 .btn{
 display:inline-block;
-padding:15px 30px;
-background:#00c853;
+padding:14px 30px;
+background:#00C853;
 color:white;
 text-decoration:none;
 border-radius:8px;
-font-size:18px;
 margin:10px;
 }
 
 .section{
-padding:60px 20px;
 max-width:1100px;
 margin:auto;
+padding:60px 20px;
 }
 
 .section h2{
 text-align:center;
-margin-bottom:40px;
-color:#1565c0;
+margin-bottom:30px;
+color:#1565C0;
 }
 
 .cards{
@@ -88,16 +102,15 @@ background:white;
 padding:25px;
 border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,.1);
-text-align:center;
+transition:.3s;
 }
 
-.card h3{
-color:#1565c0;
-margin-bottom:10px;
+.card:hover{
+transform:translateY(-8px);
 }
 
 footer{
-background:#0d47a1;
+background:#0D47A1;
 color:white;
 text-align:center;
 padding:20px;
@@ -106,8 +119,8 @@ margin-top:40px;
 
 .whatsapp{
 position:fixed;
-right:20px;
 bottom:20px;
+right:20px;
 background:#25D366;
 color:white;
 padding:15px 18px;
@@ -115,30 +128,8 @@ border-radius:50%;
 font-size:24px;
 text-decoration:none;
 }
-</.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    margin-top:30px;
-}
+</style>
 
-.card{
-    background:#fff;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-    transition:0.3s;
-    text-align:center;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card h3{
-    color:#1565c0;
-    margin-bottom:10px;
-}>
 </head>
 
 <body>
@@ -146,29 +137,38 @@ text-decoration:none;
 <header>
 <h1>MBSC SOLUTIONS</h1>
 <p>Your Tax, Our Expertise</p>
-</header>
 
 <nav>
-<a href="#">Home</a>
+<a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#services">Services</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<section class="hero">
-<h2>Professional Tax & Business Services</h2>
-<p>Income Tax | GST | PAN | Aadhaar | MSME | Company Registration</p>
+</header>
 
-<a class="btn" href="tel:+919999999999">📞 Call Now</a>
-<a class="btn" href="https://wa.me/919999999999">💬 WhatsApp</a>
+<section class="hero" id="home">
+
+<h2>Professional Tax & Business Services</h2>
+
+<p>
+Income Tax • GST • PAN • Aadhaar • MSME • Company Registration
+</p>
+
+<a class="btn" href="tel:+917093334820">📞 Call Now</a>
+
+<a class="btn" href="https://wa.me/917093334820" target="_blank">💬 WhatsApp</a>
 
 </section>
 
 <section class="section" id="about">
+
 <h2>About MBSC Solutions</h2>
 
-<p style="text-align:center;font-size:18px;">
-We provide reliable Tax, GST, Accounting and Business Registration services with fast support and professional guidance.
+<p style="text-align:center;font-size:18px;max-width:800px;margin:auto;">
+
+MBSC Solutions provides Income Tax, GST, PAN, Aadhaar, MSME Registration, Accounting and Business Consultancy Services with fast, trusted and professional support across India.
+
 </p>
 
 </section>
@@ -185,18 +185,26 @@ We provide reliable Tax, GST, Accounting and Business Registration services with
 </div>
 
 <div class="card">
-<h3>GST</h3>
-<p>GST Registration & Returns</p>
+<h3>GST Services</h3>
+<p>Registration & Returns</p>
 </div>
 
 <div class="card">
-<h3>PAN & Aadhaar</h3>
-<p>Correction & New Applications</p>
+<h3>PAN Card</h3>
+<p>New PAN & Corrections</p>
+</div> <div class="card">
+<h3>Aadhaar Services</h3>
+<p>Aadhaar Update & Corrections</p>
 </div>
 
 <div class="card">
-<h3>MSME</h3>
-<p>Udyam Registration</p>
+<h3>MSME Registration</h3>
+<p>Udyam Registration for Businesses</p>
+</div>
+
+<div class="card">
+<h3>Accounting</h3>
+<p>Bookkeeping & Financial Reports</p>
 </div>
 
 <div class="card">
@@ -204,9 +212,57 @@ We provide reliable Tax, GST, Accounting and Business Registration services with
 <p>Start Your Business Easily</p>
 </div>
 
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Why Choose MBSC Solutions?</h2>
+
+<div class="cards">
+
 <div class="card">
-<h3>Accounting</h3>
-<p>Bookkeeping & Financial Services</p>
+<h3>✔ Trusted Service</h3>
+<p>100% Customer Satisfaction with Professional Support.</p>
+</div>
+
+<div class="card">
+<h3>⚡ Fast Processing</h3>
+<p>Quick and Accurate Tax & Registration Services.</p>
+</div>
+
+<div class="card">
+<h3>💰 Affordable Price</h3>
+<p>Quality Services at Reasonable Cost.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Customer Reviews</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>"Excellent Income Tax Filing Service."</p>
+<b>- Ramesh Kumar</b>
+</div>
+
+<div class="card">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>"Very Good GST Registration Support."</p>
+<b>- Sravani</b>
+</div>
+
+<div class="card">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>"Professional and Fast Service."</p>
+<b>- Mahesh</b>
 </div>
 
 </div>
@@ -217,84 +273,41 @@ We provide reliable Tax, GST, Accounting and Business Registration services with
 
 <h2>Contact Us</h2>
 
-<p style="text-align:center;">
+<p style="text-align:center;font-size:18px;">
+
 📞 +91 7093334820<br><br>
+
 📧 info@mbscsolutions.com<br><br>
+
 📍 Telangana, India
+
 </p>
+
+<div style="text-align:center;margin-top:30px;">
+
+<a class="btn" href="tel:+917093334820">📞 Call Now</a>
+
+<a class="btn" href="https://wa.me/917093334820" target="_blank">💬 WhatsApp</a>
+
+</div>
 
 </section>
 
 <footer>
 
-© 2026 MBSC Solutions | All Rights Reserved
+<h3>MBSC Solutions</h3>
+
+<p>Your Tax, Our Expertise</p>
+
+<p style="margin-top:10px;">
+© 2026 MBSC Solutions. All Rights Reserved.
+</p>
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/917093334820">💬</a>
+<a class="whatsapp" href="https://wa.me/917093334820" target="_blank">
+💬
+</a>
 
-</<section class="section" id="services">
-
-<h2>Our Services</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>📄 Income Tax</h3>
-<p>ITR Filing & Tax Planning</p>
-</div>
-
-<div class="card">
-<h3>🧾 GST Services</h3>
-<p>GST Registration & GST Returns</p>
-</div>
-
-<div class="card">
-<h3>🪪 PAN Card</h3>
-<p>New PAN & PAN Corrections</p>
-</div>
-
-<div class="card">
-<h3>🆔 Aadhaar</h3>
-<p>Aadhaar Update & Correction</p>
-</div>
-
-<div class="card">
-<h3>🏢 MSME Registration</h3>
-<p>Udyam Registration for Businesses</p>
-</div>
-
-<div class="card">
-<h3>📊 Accounting</h3>
-<p>Bookkeeping & Financial Reports</p>
-</div>
-
-</section>
-</<section class="section" id="reviews">
-
-<h2>Customer Reviews</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>⭐⭐⭐⭐⭐</h3>
-<p>"Very fast Income Tax filing service. Highly recommended!"</p>
-<b>- Ramesh Kumar</b>
-</div>
-
-<div class="card">
-<h3>⭐⭐⭐⭐⭐</h3>
-<p>"GST Registration was completed quickly with excellent support."</p>
-<b>- Sravani</b>
-</div>
-
-<div class="card">
-<h3>⭐⭐⭐⭐⭐</h3>
-<p>"Professional service for PAN and Aadhaar updates."</p>
-<b>- Mahesh</b>
-</div>
-
-</div>
-
-</section>>
+</body>
 </html>
