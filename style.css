@@ -2,23 +2,32 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f4f7fb;
+    background:#f5f7fa;
     color:#333;
     line-height:1.6;
 }
 
 header{
-    background:linear-gradient(135deg,#0d47a1,#1976d2);
+    background:#0D47A1;
     color:#fff;
-    padding:20px;
     text-align:center;
+    padding:20px;
     position:sticky;
     top:0;
     z-index:1000;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
 }
 
 nav{
@@ -34,40 +43,39 @@ nav a{
 }
 
 nav a:hover{
-    color:#ffd54f;
+    color:#FFD54F;
 }
 
 .hero{
-    padding:80px 20px;
+    background:linear-gradient(135deg,#1565C0,#42A5F5);
+    color:#fff;
     text-align:center;
-    background:linear-gradient(135deg,#1565c0,#42a5f5);
-    color:white;
+    padding:80px 20px;
 }
 
 .hero h2{
     font-size:42px;
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 
 .hero p{
     font-size:20px;
-    margin-bottom:25px;
+    margin-bottom:30px;
 }
 
 .btn{
     display:inline-block;
-    background:#28a745;
-    color:white;
-    padding:14px 28px;
+    background:#00C853;
+    color:#fff;
     text-decoration:none;
+    padding:14px 30px;
     border-radius:8px;
     margin:10px;
     transition:.3s;
 }
 
 .btn:hover{
-    background:#1f8a37;
-    transform:translateY(-2px);
+    background:#009624;
 }
 
 .section{
@@ -78,7 +86,7 @@ nav a:hover{
 
 .section h2{
     text-align:center;
-    color:#1565c0;
+    color:#1565C0;
     margin-bottom:30px;
 }
 
@@ -89,10 +97,10 @@ nav a:hover{
 }
 
 .card{
-    background:white;
+    background:#fff;
     border-radius:12px;
     padding:25px;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
     transition:.3s;
 }
 
@@ -100,29 +108,23 @@ nav a:hover{
     transform:translateY(-8px);
 }
 
+.card h3{
+    color:#1565C0;
+    margin-bottom:10px;
+}
+
 footer{
-    background:#0d47a1;
-    color:white;
+    background:#0D47A1;
+    color:#fff;
     text-align:center;
     padding:20px;
+    margin-top:40px;
 }
 
-@media(max-width:768px){
-
-.hero h2{
-font-size:30px;
-}
-
-nav a{
-display:block;
-margin:10px 0;
-}
-
-}
 .whatsapp{
     position:fixed;
-    bottom:20px;
     right:20px;
+    bottom:20px;
     width:60px;
     height:60px;
     background:#25D366;
@@ -134,9 +136,25 @@ margin:10px 0;
     text-decoration:none;
     font-size:28px;
     box-shadow:0 4px 10px rgba(0,0,0,.3);
-    transition:0.3s;
 }
 
 .whatsapp:hover{
     transform:scale(1.1);
+}
+
+@media(max-width:768px){
+
+header h1{
+    font-size:28px;
+}
+
+.hero h2{
+    font-size:30px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
 }
