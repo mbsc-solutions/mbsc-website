@@ -1,431 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MBSC Solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+    <title>MBSC Solutions</title>
 
-body{
-background:#f5f7fa;
-color:#333;
-line-height:1.6;
-}
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-header{
-background:#0D47A1;
-color:white;
-padding:20px;
-text-align:center;
-position:sticky;
-top:0;
-}
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-header h1{
-font-size:40px;
-}
-
-header p{
-margin-top:10px;
-font-size:18px;
-}
-
-nav{
-margin-top:15px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-weight:bold;
-}
-
-nav a:hover{
-color:#FFD54F;
-}
-
-.hero{
-background:linear-gradient(135deg,#1565C0,#42A5F5);
-color:white;
-padding:80px 20px;
-text-align:center;
-}
-
-.hero h2{
-font-size:42px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:20px;
-margin-bottom:30px;
-}
-
-.btn{
-display:inline-block;
-padding:14px 30px;
-background:#00C853;
-color:white;
-text-decoration:none;
-border-radius:8px;
-margin:10px;
-}
-
-.section{
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
-}
-
-.section h2{
-text-align:center;
-margin-bottom:30px;
-color:#1565C0;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-footer{
-background:#0D47A1;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 18px;
-border-radius:50%;
-font-size:24px;
-text-decoration:none;
-}
-</style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
 
 </head>
 
 <body>
+    <!-- ================= PRELOADER ================= -->
 
-<header>
+<div id="preloader">
 
-<img src="logo.png" alt="MBSC Solutions Logo" width="80">
+    <div class="loader"></div>
 
-<h1>MBSC SOLUTIONS</h1>
+    <h2>MBSC Solutions</h2>
 
-<p>Your Tax, Our Expertise</p>
+</div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="container">
+
+            <div class="logo-section">
+
+                <img src="logo.png" alt="MBSC Solutions Logo" class="logo">
+
+                <div class="company-name">
+                    <h1>MBSC SOLUTIONS</h1>
+                    <p>Your Tax, Our Expertise</p>
+                </div>
+
+            </div>
+
+            <nav>
+
+    <ul>
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#services">Services</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+        <!-- Ikkada ee line add cheyyandi -->
+        <li>
+            <a href="https://wa.me/917093334820" target="_blank" class="nav-btn">
+                Free Consultation
+            </a>
+        </li>
+
+    </ul>
 
 <nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
+
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <ul id="menu">
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#services">Services</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+        <li>
+            <a href="https://wa.me/917093334820"
+               target="_blank"
+               class="nav-btn">
+                Free Consultation
+            </a>
+        </li>
+
+    </ul>
+
 </nav>
 
-</header>
+        </div>
 
-<section class="hero" id="home">
+    </header>
 
-<h2>Professional Tax & Business Services</h2>
+    <!-- ================= HERO ================= -->
 
-<p>
-ITR-1 & 2 & 3 & 4 • GST • PAN Correction • Pan Card Aadhaar Link • MSME • ITR Registration
-</p>
+    <section class="hero">
 
-<a class="btn" href="tel:+917093334820">📞 Call Now</a>
+        <div class="container">
 
-<a class="btn" href="https://wa.me/917093334820" target="_blank">💬 WhatsApp</a>
+            <div class="hero-content">
+
+                <div class="hero-text">
+
+                    <h1>
+                        Your Tax,<br>
+                        Our Expertise
+                    </h1>
+
+                    <p>
+                        Professional Income Tax, GST, Accounting,
+                        PAN, Aadhaar, MSME Registration,
+                        Company Registration and Business Consultancy Services.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a href="#contact" class="btn btn-green">
+                            Get Free Consultation
+                        </a>
+
+                        <a href="#services" class="btn btn-white">
+                            Our Services
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Dashboard -->
+
+                <div class="dashboard">
+
+                    <div class="card">
+
+                        <small>Total Clients</small>
+
+                        <h2 id="clients">0</h2>
+
+                        <span>Trusted Clients</span>
+
+                    </div>
+
+                    <div class="stats">
+
+                        <div class="stat">
+                            <h4>GST</h4>
+                            <h2 id="gst">0</h2>
+                        </div>
+
+                        <div class="stat">
+                            <h4>IT Returns</h4>
+                            <h2 id="itr">0</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="graph">
+
+                        <h3>Business Growth</h3>
+
+                        <div class="bars">
+
+                            <div class="bar bar1"></div>
+                            <div class="bar bar2"></div>
+                            <div class="bar bar3"></div>
+                            <div class="bar bar4"></div>
+                            <div class="bar bar5"></div>
+                            <div class="bar bar6"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+
+    <section id="services" class="services">
+
+        <div class="container">
+
+            <h2 class="section-title">Our Services</h2>
+
+            <div class="service-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-receipt"></i>
+                    </div>
+                    <h3>Income Tax</h3>
+                    <p>Income Tax Return Filing, Tax Planning and Tax Consultation.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-bank"></i>
+                    </div>
+                    <h3>GST Services</h3>
+                    <p>GST Registration, GST Returns and GST Compliance.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-credit-card-2-front"></i>
+                    </div>
+                    <h3>PAN & Aadhaar</h3>
+                    <p>PAN Card, Aadhaar Updates and Correction Services.</p>
+                </div>
+                                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-building"></i>
+                    </div>
+                    <h3>Company Registration</h3>
+                    <p>Startup Registration, Pvt Ltd, LLP and Business Registration.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-calculator"></i>
+                    </div>
+                    <h3>Accounting</h3>
+                    <p>Bookkeeping, Payroll, Financial Statements and Accounting.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-briefcase"></i>
+                    </div>
+                    <h3>Business Consultancy</h3>
+                    <p>Professional Financial and Business Growth Consulting.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about">
+
+        <div class="container">
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <h2>About MBSC Solutions</h2>
+
+                    <p>
+                        MBSC Solutions is committed to providing reliable,
+                        transparent and professional taxation, accounting,
+                        GST and business consultancy services for
+                        individuals, startups and companies.
+                    </p>
+
+                    <p>
+                        Our experienced team helps clients with complete
+                        financial compliance while ensuring accuracy,
+                        trust and timely service.
+                    </p>
+
+                </div>
+
+                <div class="about-box">
+
+                    <h3>Why Clients Trust Us</h3>
+
+                    <ul>
+                        <li>✔ Experienced Tax Professionals</li>
+                        <li>✔ Fast & Reliable Service</li>
+                        <li>✔ Affordable Pricing</li>
+                        <li>✔ 100% Client Support</li>
+                        <li>✔ Transparent Process</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= WHY CHOOSE US ================= -->
+
+    <section class="why">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Why Choose MBSC Solutions?
+            </h2>
+
+            <div class="why-grid">
+
+                <div class="why-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-award"></i>
+                    </div>
+
+                    <h3>Trusted Experts</h3>
+
+                    <p>
+                        Experienced professionals for all your taxation
+                        and business needs.
+                    </p>
+
+                </div>
+
+                <div class="why-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+
+                    <h3>Fast Service</h3>
+
+                    <p>
+                        Quick processing with timely updates and
+                        professional support.
+                    </p>
+
+                </div>
+
+                <div class="why-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+
+                    <h3>Reliable Support</h3>
+
+                    <p>
+                        Accurate documentation with complete
+                        transparency and trust.
+                    </p>
+
+                </div>
+
+                <div class="why-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+
+                    <h3>Customer First</h3>
+
+                    <p>
+                        We focus on long-term relationships and
+                        client satisfaction.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials">
+
+    <div class="container">
+
+        <h2 class="section-title">What Our Clients Say</h2>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <p>
+                    "Excellent service. Income Tax filing was completed quickly
+                    and professionally."
+                </p>
+
+                <h4>⭐⭐⭐⭐⭐</h4>
+
+                <strong>Ramesh Kumar</strong>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <p>
+                    "Very helpful for GST Registration and business consultancy.
+                    Highly recommended."
+                </p>
+
+                <h4>⭐⭐⭐⭐⭐</h4>
+
+                <strong>Sravani</strong>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <p>
+                    "Professional team with quick response. Great experience
+                    with MBSC Solutions."
+                </p>
+
+                <h4>⭐⭐⭐⭐⭐</h4>
+
+                <strong>Mahesh</strong>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
+<!-- ================= FAQ ================= -->
 
-<section class="section" id="about">
+<section class="faq" id="faq">
 
-<h2>About MBSC Solutions</h2>
+    <div class="container">
 
-<p style="text-align:center;font-size:18px;max-width:800px;margin:auto;">
+        <h2 class="section-title">Frequently Asked Questions</h2>
 
-MBSC Solutions provides Income Tax, GST, PAN, Aadhaar, MSME Registration, Accounting and Business Consultancy Services with fast, trusted and professional support across India.
+        <div class="faq-item">
+            <h3>Do I need an appointment?</h3>
+            <p>No. You can call us or send a message through the contact form.</p>
+        </div>
 
-</p>
+        <div class="faq-item">
+            <h3>Do you provide GST Registration?</h3>
+            <p>Yes. We provide GST Registration, GST Returns and complete GST support.</p>
+        </div>
 
-</section>
+        <div class="faq-item">
+            <h3>Can you help with Company Registration?</h3>
+            <p>Yes. We help with Proprietorship, Partnership, LLP and Private Limited Company Registration.</p>
+        </div>
 
-<section class="section" id="services">
+        <div class="faq-item">
+            <h3>How can I contact MBSC Solutions?</h3>
+            <p>You can call us, send a WhatsApp message or fill out the contact form.</p>
+        </div>
 
-<h2>Our Services</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Income Tax</h3>
-<p>ITR Filing & Tax Planning</p>
-</div>
-
-<div class="card">
-<h3>GST Services</h3>
-<p>Registration & Returns</p>
-</div>
-
-<div class="card">
-<h3>PAN Card</h3>
-<p>New PAN & Corrections</p>
-</div> <div class="card">
-<h3>Aadhaar Services</h3>
-<p>Aadhaar Update & Corrections</p>
-</div>
-
-<div class="card">
-<h3>MSME Registration</h3>
-<p>Udyam Registration for Businesses</p>
-</div>
-
-<div class="card">
-<h3>Accounting</h3>
-<p>Bookkeeping & Financial Reports</p>
-</div>
-
-<div class="card">
-<h3>ITR Registration</h3>
-<p>Income Tax Return Filing for Individuals & Businesses</p>
-</div>
-
-</div>
+    </div>
 
 </section>
+        <!-- ================= CONTACT ================= -->
 
-<section class="section">
+    <section id="contact" class="contact">
 
-<h2>Why Choose MBSC Solutions?</h2>
+        <div class="container">
 
-<div class="cards">
+            <div class="contact-box">
 
-<div class="card">
-<h3>✔ Trusted Service</h3>
-<p>100% Customer Satisfaction with Professional Support.</p>
-</div>
+                <!-- Contact Information -->
+                <div class="contact-info">
 
-<div class="card">
-<h3>⚡ Fast Processing</h3>
-<p>Quick and Accurate Tax & Registration Services.</p>
-</div>
+                    <h2>Contact Us</h2>
 
-<div class="card">
-<h3>💰 Affordable Price</h3>
-<p>Quality Services at Reasonable Cost.</p>
-</div>
+                    <p><strong>📞 Phone:</strong> +91 7093334820</p>
 
-</div>
+                    <p><strong>📧 Email:</strong> mbscsolutions3@gmail.com</p>
 
-</section>
-<section class="section" id="stats">
-  
-<h2>Our Achievements</h2>
+                    <p><strong>📍 Address:</strong></p>
 
-<div class="cards">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d670.4989478637244!2d80.83049228188773!3d18.075497500346568!2m3!1f0!2f0!3f0!2m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3159f7c7650bc5%3A0xc6854530aa5cbe2e!2sSecond%20Skin!5e0!3m2!1sen!2sin!4v1784439210780!5m2!1sen!2sin"
+                        width="100%"
+                        height="250"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
 
-<div class="card">
-<h3>1000+</h3>
-<p>Happy Clients</p>
-</div>
+                    <p class="mt-3">
+                        We are always ready to help you with Income Tax,
+                        GST, Accounting, Company Registration and Business Consultancy.
+                    </p>
 
-<div class="card">
-<h3>5000+</h3>
-<p>Income Tax Returns Filed</p>
-</div>
+                </div>
 
-<div class="card">
-<h3>800+</h3>
-<p>GST Registrations</p>
-</div>
+                <!-- Contact Form -->
+                <div class="contact-form">
 
-<div class="card">
-<h3>5+</h3>
-<p>Years of Experience</p>
-</div>
+                    <form action="https://formsubmit.co/mbscsolutions3@gmail.com" method="POST">
 
-</div>
+                        <input type="text" name="name" placeholder="Your Name" required>
 
-</section>
-<div class="cards">
+                        <input type="email" name="email" placeholder="Email Address" required>
 
-<div class="card">
-<h3>✔ Trusted Service</h3>
-<p>100% Customer Satisfaction with Professional Support.</p>
-</div>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
 
-<div class="card">
-<h3>⚡ Fast Processing</h3>
-<p>Quick and Accurate Tax & Registration Services.</p>
-</div>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
-<div class="card">
-<h3>💰 Affordable Price</h3>
-<p>Quality Services at Reasonable Cost.</p>
-</div>
+                        <!-- Disable Captcha -->
+                        <input type="hidden" name="_captcha" value="false">
 
-</div>
+                        <!-- Thank You Page (optional) -->
+                        <input type="hidden" name="_next" value="https://mbscsolutions.github.io/mbsc-website/">
 
-</section>
+                        <button type="submit">
+                            Send Message
+                        </button>
 
-<section class="section">
+                    </form>
 
-<h2>Customer Reviews</h2>
+                </div>
 
-<div class="cards">
+            </div>
 
-<div class="card">
-<h3>⭐⭐⭐⭐⭐</h3>
-<p>"Excellent Income Tax Filing Service."</p>
-<b>- Ramesh Kumar</b>
-</div>
+        </div>
 
-<div class="card">
-<h3>⭐⭐⭐⭐⭐</h3>
-<p>"Very Good GST Registration Support."</p>
-<b>- Sravani</b>
-</div>
+    </section>
 
-<div class="card">
-<h3>⭐⭐⭐⭐⭐</h3>
-<p>"Professional and Fast Service."</p>
-<b>- Mahesh</b>
-</div>
+    <!-- ================= FOOTER ================= -->
 
-</div>
+    <footer>
 
-</section>
+        <div class="container">
 
-<section class="section" id="contact">
+            <p>
+                <p>© <span id="year"></span> MBSC Solutions. All Rights Reserved.</p>
+            </p>
 
-  <section class="section" id="faq">
+        </div>
 
-<h2>Frequently Asked Questions</h2>
+    </footer>
 
-<div class="cards">
+    <!-- ================= WHATSAPP BUTTON ================= -->
 
-<div class="card">
-<h3>📌 What documents are required for ITR Filing?</h3>
-<p>PAN Card, Aadhaar Card, Form 16 (if applicable), Bank Statement and Income Details.</p>
-</div>
+    <a href="https://wa.me/917093334820"
+       class="whatsapp"
+       target="_blank"
+       aria-label="Chat on WhatsApp">
 
-<div class="card">
-<h3>📌 How long does GST Registration take?</h3>
-<p>Normally 3 to 7 working days after document verification.</p>
-</div>
+        <i class="bi bi-whatsapp"></i>
 
-<div class="card">
-<h3>📌 Do you provide online services?</h3>
-<p>Yes, we provide Income Tax, GST, PAN, Aadhaar and MSME services all over India.</p>
-</div>
+    </a>
+<!-- ================= BACK TO TOP ================= -->
 
-</div>
-
-</section>
-<h2>Contact Us</h2>
-
-<p style="text-align:center;font-size:18px;">
-
-📞 +91 7093334820<br><br>
-
-📧 mbscsolutions3@gmail.com<br><br>
-
-📍 Telangana, India
-
-</p>
-
-<div style="text-align:center;margin-top:30px;">
-
-<a class="btn" href="tel:+917093334820">📞 Call Now</a>
-
-<a class="btn" href="https://wa.me/917093334820" target="_blank">💬 WhatsApp</a>
-
-</div>
-
-</section>
-<section class="section" id="location">
-
-<h2>Our Location</h2>
-
-<iframe
-src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sin!4v1784389527303!5m2!1sen!2sin!6m8!1m7!1sR-fSgHn6SI9YCauH9eipxA!2m2!1d18.07538443736867!2d80.83070199841833!3f59.60399567395665!4f-0.4818124055125992!5f0.7820865974627469"
-width="100%"
-height="350"
-style="border:0;border-radius:10px;"
-allowfullscreen=""
-loading="lazy"
-referrerpolicy="strict-origin-when-cross-origin">
-</iframe>
-
-</section>
-
-<section class="section" id="enquiry">
-<h2>Send an Enquiry</h2>
-
-<form style="max-width:600px;margin:auto;">
-
-<input type="text" placeholder="Your Name" required
-style="width:100%;padding:15px;margin:10px 0;border:1px solid #ccc;border-radius:8px;">
-
-<input type="tel" placeholder="Mobile Number" required
-style="width:100%;padding:15px;margin:10px 0;border:1px solid #ccc;border-radius:8px;">
-
-<input type="email" placeholder="Email Address"
-style="width:100%;padding:15px;margin:10px 0;border:1px solid #ccc;border-radius:8px;">
-
-<textarea placeholder="Your Message" rows="5"
-style="width:100%;padding:15px;margin:10px 0;border:1px solid #ccc;border-radius:8px;"></textarea>
-
-<button type="submit"
-style="background:#1565C0;color:#fff;padding:15px 30px;border:none;border-radius:8px;font-size:18px;cursor:pointer;">
-Send Message
+<button id="topBtn" title="Go to Top">
+    ↑
 </button>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-</form>
-
-</section>
-
-<footer>
-
-<h3>MBSC Solutions</h3>
-
-<p>Your Tax, Our Expertise</p>
-
-<p style="margin-top:10px;">
-© 2026 MBSC Solutions. All Rights Reserved.
-</p>
-
-</footer>
-
-<a class="whatsapp" href="https://wa.me/917093334820" target="_blank">
-💬
-</a>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 
 </body>
+
 </html>
